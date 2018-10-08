@@ -1,0 +1,16 @@
+{
+    "<start>": ["NP Will REACT", "This is Why NP VP", "Can You Guess NP PP NP?", "NP are Freaking Out About NP", "Num Stunning Photos of NP", "This is What Happens When NP VP", "NP VP. You WILL What Happens Next!", "Twitter Reacts to NP", "Num Things Only NP Will Understand", "Only Num in Num NP VP", "The Top Num Songs About NP", "Num Hilarious Tweets of NP VP", "Only NP Can Solve These Questions. Are You One of Them? Click to Find Out"],
+    "NP": ["DET NOUN", "DET NOUN that VP [2]", "DET Adj NOUN [2]", "PROPN"],
+    "PP": ["Prep NP"],
+    "Prep": ["by", "from"],
+    "VP": ["Vtrans NP", "Vintr"],
+    "DET": ["These", "Those", "The"],
+    "REACT": ["Make You Cry", "Make You Cry Tears of Joy", "Give You Goosebumps", "Melt Your Heart", "Make You Can't Stop Laughing", "Shock You", "Make You Squee", "Give You Feels"],
+    "WILL": ["Won't Believe", "Will Be Shocked to See", "Will Love"],
+    "Num": ["10", "Ten", "Two", "Five", "Three", "Four", "Six", "Seven", "Eight", "Nine", "One Hundred", "One Thousand"],
+    "PROPN": ["Harry Potter", "Cthulu", "Shoggoth", "Holmeses", "Watsons", "The Dursleys", "Winnie the Pooh", "Eeyore", "Zeus"],
+    "NOUN": ["Elder Gods", "Old Ones", "Aunts", "Butlers", "Consulting Detectives", "Problems", "Childhood Shows", "Tricksters", "Gods", "Goddesses", "Stuffed Animals"],
+    "Adj": ["Devilish", "Amazing", "Heartbroken", "Anguished", "Difficult", "Eldritch", "Otherworldly", "Beloved", "Wonderful", "Marvelous", "Mischievous", "Genius", "Misguided", "Poor", "Misunderstood", "Prodigy", "Depressed", "Precocious", "Pondering", "Diva", "Half-Asleep"],
+    "Vtrans": ["Wake", "Run", "Shimmer", "Eat", "Rend", "Demolish", "Nag", "Scold", "Dissect", "Research", "Summon", "Smoke", "Smite", "Prank"],
+    "Vintr": ["Rise", "Awaken", "Sleep", "Meditate", "Dream", "Write", "Act", "Take Selfies", "Wail", "Bumble", "Give Speeches", "Argue", "Squabble", "Vlog"]
+}

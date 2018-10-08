@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#container {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+}
+
+#container p {
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.heading {
+    font-family: serif;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.heading:hover {
+    font-weight: bold;
+}
