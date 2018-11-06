@@ -1,0 +1,255 @@
+"DRINK ME" by "Ivy Wong"
+
+Include Basic Help Menu by Emily Short.
+Release along with an interpreter.
+Release along with the source text.
+
+When play begins:
+	choose row 1 in Table of Basic Help Options;
+		now description entry is "This is a game inspired by Alice in Wonderland -- or, rather, Through the Looking Glass... after all, things have strange reflections here."
+
+After printing the banner text, say "[line break]Type 'help' at any time for hints or an introduction for how to play."
+
+Part 0 - Commands
+
+Ignoring is an action applying to one thing. Understand "ignore [something]" as ignoring.
+Reading is an action applying to one thing. Understand "read [something]" as reading.
+Writing is an action applying to one thing. Understand "write on [something]" as writing.
+Fixing is an action applying to one thing. Understand "fix [something]" as fixing.
+Leaving is an action applying to one thing. Understand "leave [something]" as leaving.
+Throwing is an action applying to one carried thing. Understand "throw [something]" as throwing. 
+Changing the channel is an action applying to nothing. Understand "change channel" as changing the channel.
+Attacking it with is an action applying to two things. Understand "attack [something] with [something]" as attacking it with. Understand "throw [something] at [something]" as attacking it with.
+
+A thing is either broken or not broken. A thing is usually not broken.
+
+Part I - A Small Room
+
+After reading a command:
+	let C be "[the player's command]";
+	if C is "drink me" or C is "DRINK ME" or C is "DRINK YOU" or C is "drink you":
+		say "You can't drink yourself, silly. But you can drink yourself silly if you want to.";
+		reject the player's command;
+
+Small Room is a room. "You are in a small room. There's a couch and an end table on the western wall, and a [if television is broken]shattered [end if]flat screen TV on the eastern wall. On the northern wall is a narrow window. To the south is the one and only door, which looks like it's made of flimsy wood. In the center of the room is a low coffee table."
+
+The coffee table is scenery in the Small Room. It is fixed in place. It is a supporter. The description is "The coffee table barely hits your knees. It's made of dark mahogany, and is missing a leg."
+
+A strange vial is on top of the coffee table. "Sitting atop the table is a tiny glass vial containing a bluish liquid. Engraved on its surface are the words 'DRINK ME'." The description is "It's a glass vial, topped with cork and small enough to fit in your palm. On the front of the vial are the words 'DRINK ME', engraved in a fancy typeface."
+
+The couch is scenery in the Small Room. It is fixed in place. It is an enterable supporter. The description is "The couch looks like it could fit three people. It's navy in color and very soft to the touch."
+
+The small end table is scenery in the Small Room. It is fixed in place. It is a supporter. "The end table is tucked in the corner next to the couch. A rather glitzy lamp sits on it."
+
+The lamp is a switched off device on the small end table. It is scenery. The description is "The lampshade is decorated with a variety of ostentatious rhinestones."
+
+After switching on the lamp:
+	say "You turn on the lamp. It flickers erratically before stabilizing.";
+
+After switching off the lamp:
+	say "You turn off the lamp. The glint of the rhinestones was hurting your eyes.";
+
+After entering the couch:
+	say "You sit on the couch. So squishy."
+	
+The television is a switched off device in the Small Room. It is fixed in place and scenery. The description is "The television looks like the only modern thing in the room. It's sleek, black, and has a silver 'Carroll' logo below the [if the television is switched off and the television is not broken]blank[else]flickering[end if] screen. [if broken]Pieces of the screen are scattered all over the floor.[end if][if switched on]On the screen is [one of]a rather plump woman in full-face make up and an oversized crown.[or]a handsome man in a top hat. For some reason, the brim of his hat is decorated with playing cards.[or]a large caterpillar relaxing on a mushroom. Wait... is that a miniature pipe?[or]a blonde-haired girl in a frilled blue dress napping under a leafy oak tree.[or]a rabbit in a plaid vest hopping through a field.[then purely at random]"
+
+Instead of switching on a broken device:
+	say "It's broken.";
+	stop the action;
+
+Understand "tv" as the television.
+
+After switching on the television:
+	say "You press the power button, and the screen comes to life.";
+
+Instead of changing the channel:
+	if the television is switched on:
+		say "You press a button, and the screen changes, revealing [one of]a rather plump woman in full-face make up and an oversized crown.[or]a handsome man in a top hat. For some reason, the brim of his hat is decorated with playing cards.[or]a large caterpillar relaxing on a mushroom. Wait... is that a miniature pipe?[or]a blonde-haired girl in a frilled blue dress napping under a leafy oak tree.[or]a rabbit in a plaid vest hopping through a field.[then purely at random]";
+	if the television is broken:
+		say "The screen's in pieces.";
+	else:
+		say "The television isn't on.";
+
+After switching off the television:
+	say "You press the power button, and the screen blanks out.";
+	
+Instead of drinking the vial:
+	now the vial is nowhere;
+	say "(first taking the vial) You pick up the vial, pop the cork out, and gulp the whole thing down. It's vaguely sweet.";
+	wait for any key;
+	say "The world starts spinning around you...";
+	wait for any key;
+	say "Somewhere in the distance, you hear a yelp, and a faint 'I'm late!'";
+	move the player to the Large Room;
+	now the vial is on the coffee table;
+
+Instead of dropping the vial:
+	try attacking the vial;
+
+[this is what happens when you try to break the vial]
+Instead of attacking the vial:
+	now the vial is nowhere;
+	say "(first taking the vial) You wrap the vial in your fist, raise your arm high above your head, and fling the vial onto the floorboards with an enthusiasm your baseball coach would have loved to have seen. A moment of silence, and then the world starts spinning around you...";
+	wait for any key;
+	say "Somewhere in the distance, you hear a yelp, and a faint 'I'm late!'";
+	move the player to the Large Room;
+	now the vial is on the coffee table;
+
+The narrow window is a closed door and scenery. It is north of the Small Room. The description is "[if closed]The window looks like it's seen better days. The glass behind the curtains is cracked in places. You can't see much outside.[else]Without the glass in the way, you can see the view of the room from in front of the television, and yourself peering through the window.[end if]"
+
+Instead of opening the narrow window:
+	say "You don't dare do that. It might shatter all over your fingers if you do.";
+
+Instead of attacking the narrow window:
+	say "What with? You don't fancy bloodying your hands on that glass.";
+
+Instead of attacking the narrow window with something (called the weapon):
+	if the weapon is Jabberwonky or the weapon is the lamp:
+		say "You heft [the weapon] in a hand, gear up, and hurl that baby at the glass. It immediately shatters in a curtain of glass shards, and then you hear something breaking [italic type]inside[roman type] the room.";
+		now the narrow window is broken;
+		now the narrow window is open;
+		now the television is broken;
+	else:
+		say "That's not going to work.";
+
+Instead of throwing something (called the weapon) at the narrow window:
+	try attacking the narrow window with the weapon;
+
+Instead of going north when the location is the Small Room:
+	if the narrow window is open:
+		say "You climb in through the window... and find yourself in the same room, in front of the television, bits of glass crunching underneath your sneakers.";
+	else:
+		say "The window's closed!";
+
+The wooden door is a closed door and scenery. It is south of the Small Room. The description is "The wood is warped and damp to the touch. There's a crooked iron door handle at waist height."
+
+After opening the wooden door:
+	say "You open the door to a solid brick red wall.";
+
+Instead of attacking the wooden door:
+	say "It's flimsy, but not [italic type]that[roman type] flimsy.";
+	
+Instead of going south when location is the Small Room:
+	say "[if wooden door is closed]The door's closed.[else]There's a brick wall in the way.";
+
+
+Part II - The Large Room
+
+Large Room is a dark room. "You aren't in a large room. There isn't a park bench and an end table on the eastern wall, and there are no bookshelves lined against the eastern wall. On the southern wall are no wide windows, propped closed with a wooden dowel. There are no steel doors to the north. Not in the center of the room is a sneaky marble pedestal."
+
+The light switch is a switched on device in the Large Room. It is fixed in place. It is scenery. "There aren't any light switches you can see here."
+After deciding the scope of the player when the location is the Large Room: 
+    place the light switch in scope.
+
+Instead of switching off the light switch: 
+	say "You reach assuredly towards the light switch and turn it off. The room is now dark.";
+	now the Large Room is lighted.
+Carry out switching on the light switch: now the Large Room is dark.
+
+Instead of looking when the player is in the Large Room and the Large Room is dark:
+	if looking for the first time:
+		say "You aren't in a large room. The room is well-lit and you can see everything around you.";
+	else:
+		say "The room is well-lit, fortunately.";
+		
+Instead of examining something (called the item) when the player is in the Large Room:
+	say "You whistle, look all around, and examine [the item]. Everything to see here, people...";
+	if examining for the first time in the Large Room:
+		say "(Not a hint: try ignoring.)";
+
+Instead of ignoring something (called the item) when the player is in the Large Room:
+	say "[the description of the item]";
+
+Instead of taking something (called the item) when the player is in the Large Room:
+	if the item is carried by the player:
+		now the item is in the Large Room;
+		say "You take [the item]. It's not on the floor now.";
+	else:
+		say "You already have it.";
+		
+Instead of dropping something (called the item) when the player is in the Large Room:
+	if the item is not carried by the player:
+		now the player has the item;
+		say "You drop [the item]. You do not have [the item] now.";
+	else:
+		say "You don't have it already!";
+
+[items and stuff here]
+The pedestal is scenery in the Large Room. It is fixed in place. It is a supporter. The description is "Translucent, short, and easily moved."
+
+The plate of cake is on top of the pedestal. The cake is edible. "There aren't any plates on pedestals containing slices of strawberry shortcake, and the slices are certainly not decorated in reddish frosting with the words 'DRINK ME'."
+
+The description of the cake is "The cake appears absolutely disgusting."
+
+The bench is scenery in the Large Room. It is fixed in place. It is an enterable supporter. "The nonexistent park bench is soft and comfy to sit on. "
+
+Instead of entering the bench:
+	say "You're already sitting."
+
+The large end table is a supporter in the Large Room. It is fixed in place. It is scenery. "The nonexistent end table does not sport a candle."
+
+A candle is on the large end table. It is scenery. "It looks like it hasn't been used at all."
+
+The bookshelves are scenery in the Large Room. They are fixed in place. They are a container. "The nonexistent bookshelves are devoid of books: 'Alice on Planet Earth', 'The Evasion of the Snark', 'Jabberwonky'";
+
+Jabberwonky is in the bookshelves. It is scenery. "There is a kind monster on the cover." Understand "book" as Jabberwonky.
+
+The wide window is scenery in the Large Room. It is fixed in place. The description is "A breeze leaves the nonexistent window. Inside, there are no grassy fields and blue skies."
+
+Instead of entering the wide window:
+	say "You're inside of it already."
+
+Instead of attacking the wide window:
+	say "There's nothing to break."
+
+Instead of fixing the wide window:
+	say "It's closed."
+
+Instead of leaving the wide window:
+	say "Alas, the window is wide."
+
+Instead of going south when the player is in the Large Room:
+	say "Alas, the window is wide."
+
+The steel door is a closed door. It is north of the Large Room. It is scenery. The description is "The door is made of thin steel, hot to the touch."
+
+Instead of opening the steel door:
+	if the steel door is closed:
+		say "The door is open already.";
+	else:
+		now the steel door is closed;
+		say "You open the door.";
+
+Instead of closing the steel door:
+	if the steel door is closed:
+		now the steel door is open;
+		say "You close the door and know that it's locked. Inside, you don't see a long hallway.";
+	else:
+		say "The door is closed already. You can't see a long hallway.";
+
+Instead of going north when the player is in the Large Room:
+	if the steel door is open:
+		say "You walk through the steel door. Finally, you're free!";
+		end the story finally;
+	else:
+		say "You can go that way.";
+		
+Instead of eating the cake:
+	say "You can eat cake, silly.";
+
+Instead of drinking the cake:
+	now the cake is nowhere;
+	say "You don't drink the cake. It tastes really bad. The room starts spinning...";
+	wait for any key;
+	say "Someone in the distance says 'Ohhhh dear!'";
+	wait for any key;
+	move the player to the Small Room;
+	now the cake is on the pedestal;
+
+Test large with "drink vial / look / turn off light / x pedestal / ignore pedestal".
+Test me with "drink vial / look / turn off light / x pedestal / take plate / drop plate / take plate / drop plate".
+Test moving with "drink vial / l / turn off light / eat cake / drink cake / l / drink vial / l".
+Test read with "drink vial / l / turn off light / drop book / read book".
+Test win with "drink vial / l / turn off light / open door / close door / north".
+Test shatter with "drink vial / turn off light / drop book / drink cake / throw book at window / n / l / x tv";
