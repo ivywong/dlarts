@@ -1,0 +1,18 @@
+A Strange Loop:
+
+drink vial
+turn off light
+drop book
+drink cake
+throw book at window
+n
+l
+x tv
+
+---
+Escape This Place:
+
+drink vial
+turn off light
+close door
+n
