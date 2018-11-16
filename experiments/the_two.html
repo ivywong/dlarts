@@ -1,0 +1,112 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!--
+The Two
+Nick Montfort
+
+Copyright 2008-2015 Nick Montfort
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+Python version: http://nickm.com/2/the_two.py
+-->
+<style type="text/css">
+/* <![CDATA[ */
+body {
+    background: #ddd;
+    color: #440;
+    margin: 0 24pt 0 24pt;
+    font-family: Optima, sans-serif;
+    font-size: 13pt;
+}
+a {
+    color: #117;
+    text-decoration: none;
+}
+/* ]]> */
+</style>
+<script type="text/javascript">
+var t=0;
+var beginning=['警员靠近所谓的犯罪者。',
+    '购物者看着收银员。',
+    '保姆靠近孩子。',
+    "学生敲老师的门。",
+    '穷人转身朝图书管理员。',
+    '司机对行人叫喊。',
+    '抢救人员找到活命主义者。'];
+var verb=[
+    ['训斥',''],
+    ['违抗',''],
+    ['拥抱',''],
+    ['对','坦白地说'],
+    ['恳求','说'],
+    ['向','请教'],
+    ['对','表示同情'],
+    ['打','耳光'],
+    ['向','投降'],
+];
+var end=['他们痛哭一场后就振作起来。',
+    '他们一起祈祷。',
+    '他们沉默地等。',
+    '他们都哈哈大笑起来。',
+    '他们都做出下流手势。',
+    '一人因此伤心欲绝。',
+    '六年后，他们俩都忘记这事件了。',
+    '更强大的获胜了。',
+    '处于劣势者领先了。',
+    '每个人都学到了一些东西。'];
+var ta=['他','她'];
+function rand_range(max) {
+    return Math.floor(Math.random()*(max+1));
+}
+function choose(array) {
+    return array[rand_range(array.length-1)];
+}
+function story() {
+    var main=document.getElementById('main');
+    if (t<=5) {
+        t+=1;
+    } else {
+        main.removeChild(document.getElementById('main').firstChild);
+    }
+    last=document.createElement('div');
+    last.appendChild(document.createElement('br'));
+    last.appendChild(document.createTextNode(choose(beginning)));
+    last.appendChild(document.createElement('br'));
+    mid_sentence = choose(verb);
+    pre_second = mid_sentence[0];
+    post_second = mid_sentence[1];
+    middle=choose(ta) + pre_second + choose(ta) + post_second + '。';
+    last.appendChild(document.createTextNode(middle));
+    last.appendChild(document.createElement('br'));
+    last.appendChild(document.createTextNode(choose(end)));
+    main.appendChild(last);
+}
+function produce_stories() {
+    story();
+    setInterval(story, 4000);
+}
+        </script>
+        <title>他们俩</title>
+    </head>
+    <body onload="produce_stories();">
+        <div style="float:right;">
+            <div><br>他们俩<br><a href="http://nickm.com">Nick Montfort</a><br>
+                <a href="https://nickm.com/2/the_two.py">Python版</a><br>
+                <a href="https://nickm.com/2/los_dos.html">Español</a> &middot;
+                <a href="https://nickm.com/2/les_deux.html">Français</a> &middot;
+                <a href="https://nickm.com/2/futari.html">日本語</a> &middot;
+                <a href="https://nickm.com/2/duet.html">Polski</a> &middot;
+                <a href="https://nickm.com/2/dvoje.html">Русский</a></div>
+        </div>
+        <div id="main"></div>
+    </body>
+</html>
+
