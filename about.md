@@ -3,4 +3,4 @@ layout: page
 title: About
 permalink: /about/
 ---
-Website/blog for LITR0110D responses.
+Hi, I'm Ivy. This is my blog for my responses and experiments for LITR0110D (Digital Language Arts I).
