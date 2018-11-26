@@ -20,4 +20,8 @@ I have not worked with Chrome extensions before, so figuring out how they work w
 
 I may also store "learned" words that carry over from webpage to webpage, but that may be difficult depending on how I choose the unknown language.
 
-(This page will be updated later as I do some more investigation into Chrome extensions, how pop-up dictionaries work, and make the design decisions as stated above).
+Though I haven't had much time to explore the workings of Chrome extensions, I've looked into the APIs I might need to do translating. For the initial translation of the webpage, I think I can do something with the Google Website Translator. I've managed to set it up on my local version of this blog, as shown below, with the "original text" popup-on-hover disabled. Unfortunately, you have to pay to access the actual Translate API, and I'll have to look for alternatives if I want to do the back-translation (or settle with only translating into, say, English).
+
+Since my goal is for this extension to be able to work with any website, I'll have to look into injecting this google translate button into an external website via an extension, but if I'm unable to do that, I might have to settle with making a mock webpage or two for the project instead.
+
+![Image of this blog machine translated into French]({{site.baseurl}}/images/translation.png)
