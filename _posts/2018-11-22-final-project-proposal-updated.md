@@ -8,6 +8,16 @@ tags: final project
 
 **Summary**: My revised final project idea is a mock popup dictionary Chrome extension, simulating the process of learning a foreign language. The extension will force you to browse webpages in a language you don't know with the sole help of a pop-up dictionary. Over time, the web pages will transition from that unknown language to a language that you _do_ know, and using the dictionary to look up words constantly may hinder this.
 
+### UPDATE
+
+There are a few problems I've found with this version of the final project, listed below:
+- Problem: different languages do not have a 1:1 correspondence between words and still remain legible
+- Problem: do not have the capability of Google Translate
+- Problem: taking the full text of a website is easy; putting it back is hard
+- Problem: original final project idea may have been too broad in scope
+
+The main problem is that I wanted to have this work with _any_ website, in accordance to _every_ user's language capabilities. Originally I'd envisioned a sort of back-translation to the original text, but that wouldn't have worked, because translation isn't a word-for-word process, and this aspect would undermine my original intention. I thought of a possible solution that involved taking the full original text and the full machine translated text, comparing their lengths, and then changing back character-by-character only, but that's a little odd, and if I want to do word-by-word, well, not every language separates words using spaces. All-in-all, if I had more time than ~2 weeks, maybe I could have figured out a workaround, but for now, I think these problems make the entire project idea problematic.
+
 ### Details
 
 **Concept**:
