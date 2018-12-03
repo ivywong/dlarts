@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Final Project Update"
-date: 2018-11-27 18:11:32 -0500
+title: "Final Project Update - Sample Story"
+date: 2018-12-03 00:58:11 -0500
 tags: final project 
 ---
 
