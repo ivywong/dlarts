@@ -4,14 +4,13 @@ title: "Final Project Update - Sample Story"
 date: 2018-12-03 00:58:11 -0500
 tags: final project 
 ---
-
-After thinking about it some more, I'm debating whether I should make the person behind the website an actual alien. It would be a cool opportunity to explore really weird sci-fi stuff, but that might be too much to do in the limited amount of time I have.
-
 This week, I hashed out some of the language and culture specifics and came up with this story, or _shiwud_, a fable-esque story tradition teaching about relationships. In-universe, the website owner likes to write in their free time and was asked to write this for a friend's child. I really like how it turned out, in that the meaning of the machine translated part is drastically different from the manual translation. I'm not sure if I managed to get the feeling of the machine translation out properly, though.
 
 The point here is that in this culture, everyone who isn't a stranger -- yes, even your enemies -- is considered a "friend", or perhaps comrade, but there are different shades of the word, representing different relationship dynamics. 
 
 In any case, I'm feeling a bit behind; I've been swamped with work recently. At the very least, I'm hoping I can get a few of these types of stories and a few snippets up for a homepage by the presentation next week. I'm not sure I can get this drastic of a contrast between both translations for other pieces of writing, hm... Well, the good thing about making up a language is that you can make up the things that trip people up, too.
+
+EDIT: I've settled on a title for this project: _small cat small home_, a literal translation of the website name. Work in progress can be seen here: [small cat small home]({{site.baseurl}}/remo/index.html)
 
 ## shiwud - re'yir, re'yan (poor friend, good friend)
 

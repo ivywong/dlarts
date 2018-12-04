@@ -6,7 +6,7 @@ tags: final project
 ---
 After looking into my previous final project idea some more, I realized that there are some serious technical difficulties involved with it, and might be too big in scale to be completed in two weeks. I've edited [the previous post]({{site.baseurl}}{% post_url 2018-11-22-final-project-proposal-updated %}) with my findings, and here's my final proposal. The last version, I promise!
 
-**Working Title**: An Open Window
+**Working Title**: Small Cat Small Home
 
 **Summary**: 
 
