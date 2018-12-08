@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'HandwritingCR';
+    src: url('fonts/HandwritingCR.woff2') format('woff2'),
+    url('fonts/HandwritingCR.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'HandwritingCR', Caveat, cursive, sans-serif;
+    color: #333333;
+    background-color: #eee2ca;
+    margin-left: 20px;
+    max-width: 1200px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 10px 0px;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#nav li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+
+#content .toggle-content {
+    display: none; 
+}
+
+#content .toggle-content.is-visible {
+    display: block;
+}
+
+#kowigae-icon {
+    position: absolute;
+    left: 50px;
+    top: 125px;
+}
+
+#luy-icon {
+    position: absolute;
+    left: 50px;
+    top: 525px;
+}
+
+#kuwod-icon {
+    position: absolute;
+    left: 320px;
+    top: 200px;
+}
+
+#fam-icon {
+    position: absolute;
+    left: 920px;
+    top: 125px;
+}
+
+#liy-icon {
+    position: absolute;
+    left: 920px;
+    top: 525px;
+}

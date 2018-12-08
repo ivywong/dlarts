@@ -3,14 +3,75 @@
 <head>
     <title>kumawet kukuwod</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-<img src="ere.png" usemap="#eremap">
+    <h1>kumawet kukuwod</h1>
+    <ul id="nav">
+        <li> kuwod kod </li>
+        <li>
+            <b>'yom | </b>
+            <a href="#">rinheg boshti</a>
+        </li>
+        <li>
+            <b>'yan | </b>
+            <a href="#">maney yopon</a>
+            <a href="#">patur, patur</a>
+        </li>
+        <li>
+            <b>'yir | </b>
+            <a href="#">yumoyyan wor</a>
+        </li>
+    </ul>
+    <hr/>
+    <div id="content">
+        <div id="frontpage" class="toggle-content is-visible">
+            <a name="main"></a>
+            <a href="#kowigae" class="toggle"><img id="kowigae-icon" src="images/kowigae.png" /></a>
+            <a href="#luy" class="toggle"><img id="luy-icon" src="images/luy.png" /></a>
+            <img id="kuwod-icon" src="images/kuwod.png" />
+            <a href="#fam" class="toggle"><img id="fam-icon" src="images/fam.png" /></a>
+            <a href="#liy" class="toggle"><img id="liy-icon" src="images/liy.png" /></a>
+        </div>
+    
+        <div id="kowigae" class="toggle-content">
+            <a href="#frontpage" class="toggle">← meechomo</a>
+            <h2>kumawet kukowigae</h2>
+            <h3>13 November</h3>
+            <p>this is a test entry.</p>
+        </div>
 
-<map name="eremap">
-    <area target="" alt="kowigae" title="kowigae" href="kowigae.html" coords="306,332,75,29" shape="rect">
-    <area target="" alt="luy" title="luy" href="luy.html" coords="56,495,317,768" shape="rect">
-    <area target="" alt="fam" title="fam" href="fam.html" coords="951,45,1177,342,1172,334" shape="rect">
-    <area target="" alt="liy" title="liy" href="liy.html" coords="957,491,1209,748" shape="rect">
-</map>
+        <div id="luy" class="toggle-content">
+            <a href="#frontpage" class="toggle">← meechomo</a>
+            <h2>kumawet kuluy</h2>
+            <p>drawings and things</p>
+        </div>
+        
+        <div id="kuwod" class="toggle-content">
+            <a href="#frontpage" class="toggle">← meechomo</a>
+            <h2>kumawet kukuwod</h2>
+            <p>totally an about page</p>
+        </div>
+        
+        <div id="fam" class="toggle-content">
+            <a href="#frontpage" class="toggle">← meechomo</a>
+            <h2>kumawet kufam</h2>
+            <p>poems</p>
+        </div>
+        
+        <div id="liy" class="toggle-content">
+            <a href="#frontpage" class="toggle">← meechomo</a>
+            <h2>kumawet kuliy</h2>
+            <div class="article" id="story-shiwud">
+                <h3>shiwud - re'yir, re'yan</h3>
+                <p>yuud ti, pamam e ti Patur. re'yan Patur ti Asya, lon tu'ip. reko nubin reko nubin lon erto re. tse! nutwe shas Patur Asya, lon erto Asya ti Henor. huyuy Patur rinsu, huyuy Patur palef, minti nuo e ti, ti Asya. nim Patur -- re'yir! re'yir! fa ge' Patur shironta ran, ge' ti pagur manho, fa lanelane erto ti.</p>
+
+                <p>tse! reko erto erto, bonhim Patur nuo e ti, bonhim huyyar manho, mintiye ti. huyuy Patur rinsu, huyuy Patur rinsu. Rinsu, rinsu, lane, lane. re'yir Asya, shas Asya Patur, ne Asya Patur manho, kumo Asya nuo e ti. nim Asya -- re'yan piy Patur, re'yir Patur piy. </p>
+
+                <p>fa shasye Patur. tio Asya.</p>
+
+                <p>nim Patur -- re'yir piy rom, re'yan rom piy.</p>
+            </div>
+        </div>
+    </div>
 </body>
