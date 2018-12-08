@@ -2,75 +2,152 @@
 <html>
 <head>
     <title>kumawet kukuwod</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-    <h1>kumawet kukuwod</h1>
-    <ul id="nav">
-        <li> kuwod kod </li>
-        <li>
-            <b>'yom | </b>
-            <a href="#">rinheg boshti</a>
-        </li>
-        <li>
-            <b>'yan | </b>
-            <a href="#">maney yopon</a>
-            <a href="#">patur, patur</a>
-        </li>
-        <li>
-            <b>'yir | </b>
-            <a href="#">yumoyyan wor</a>
-        </li>
-    </ul>
-    <hr/>
-    <div id="content">
-        <div id="frontpage" class="toggle-content is-visible">
-            <a name="main"></a>
-            <a href="#kowigae" class="toggle"><img id="kowigae-icon" src="images/kowigae.png" /></a>
-            <a href="#luy" class="toggle"><img id="luy-icon" src="images/luy.png" /></a>
-            <img id="kuwod-icon" src="images/kuwod.png" />
-            <a href="#fam" class="toggle"><img id="fam-icon" src="images/fam.png" /></a>
-            <a href="#liy" class="toggle"><img id="liy-icon" src="images/liy.png" /></a>
-        </div>
-    
-        <div id="kowigae" class="toggle-content">
-            <a href="#frontpage" class="toggle">← meechomo</a>
-            <h2>kumawet kukowigae</h2>
-            <h3>13 November</h3>
-            <p>this is a test entry.</p>
-        </div>
-
-        <div id="luy" class="toggle-content">
-            <a href="#frontpage" class="toggle">← meechomo</a>
-            <h2>kumawet kuluy</h2>
-            <p>drawings and things</p>
-        </div>
+    <div id="translate-bar">
+        <button type="button" id="show-original" class="button inactive">Show Original</button>
+        <button type="button" id="machine-translation" class="button">Google Translate</button>
+    </div>
+    <div id="site-original" class="toggle-content is-visible">
+        <h1>kumawet kukuwod</h1>
+        <ul id="nav">
+            <li> kuwod kod </li>
+            <li>
+                <b>re'yom | </b>
+                <a href="#">rinheg boshti</a>
+            </li>
+            <li>
+                <b>re'yan | </b>
+                <a href="#">maney yopon</a>
+                <a href="#">patur, patur</a>
+            </li>
+            <li>
+                <b>re'yir | </b>
+                <a href="#">yumoyyan wor</a>
+            </li>
+        </ul>
+        <hr/>
+        <div id="content">
+            <div id="frontpage" class="toggle-content is-visible">
+                <a name="main"></a>
+                <a href="#kowigae" class="toggle"><img id="kowigae-icon" src="images/kowigae.png" /></a>
+                <a href="#luy" class="toggle"><img id="luy-icon" src="images/luy.png" /></a>
+                <img id="kuwod-icon" src="images/kuwod.png" />
+                <a href="#fam" class="toggle"><img id="fam-icon" src="images/fam.png" /></a>
+                <a href="#liy" class="toggle"><img id="liy-icon" src="images/liy.png" /></a>
+            </div>
         
-        <div id="kuwod" class="toggle-content">
-            <a href="#frontpage" class="toggle">← meechomo</a>
-            <h2>kumawet kukuwod</h2>
-            <p>totally an about page</p>
+            <div id="kowigae" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>kumawet kukowigae</h2>
+                <h3>13 November</h3>
+                <p>this is a test entry.</p>
+            </div>
+
+            <div id="luy" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>kumawet kuluy</h2>
+                <p>drawings and things</p>
+            </div>
+            
+            <div id="kuwod" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>kumawet kukuwod</h2>
+                <p>totally an about page</p>
+            </div>
+            
+            <div id="fam" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>kumawet kufam</h2>
+                <p>poems</p>
+            </div>
+            
+            <div id="liy" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>kumawet kuliy</h2>
+                <div class="article" id="story-shiwud">
+                    <h3>shiwud - re'yir, re'yan</h3>
+                    <p>yuud ti, pamam e ti Patur. re'yan Patur ti Asya, lon tu'ip. reko nubin reko nubin lon erto re. tse! nutwe shas Patur Asya, lon erto Asya ti Henor. huyuy Patur rinsu, huyuy Patur palef, minti nuo e ti, ti Asya. nim Patur -- re'yir! re'yir! fa ge' Patur shironta ran, ge' ti pagur manho, fa lanelane erto ti.</p>
+
+                    <p>tse! reko erto erto, bonhim Patur nuo e ti, bonhim huyyar manho, mintiye ti. huyuy Patur rinsu, huyuy Patur rinsu. Rinsu, rinsu, lane, lane. re'yir Asya, shas Asya Patur, ne Asya Patur manho, kumo Asya nuo e ti. nim Asya -- re'yan piy Patur, re'yir Patur piy. </p>
+
+                    <p>fa shasye Patur. tio Asya.</p>
+
+                    <p>nim Patur -- re'yir piy rom, re'yan rom piy.</p>
+                </div>
+            </div>
         </div>
+    </div>
+    <div id="site-machine" class="toggle-content">
+        <h1>small cat small home</h1>
+        <ul id="nav">
+            <li>other home</li>
+            <li>
+                <b>friend | </b>
+                <a href="#">red lion</a>
+            </li>
+            <li>
+                <b>friend | </b>
+                <a href="#">endless water</a>
+                <a href="#">warrior, warrior</a>
+            </li>
+            <li>
+                <b>friend | </b>
+                <a href="#">good today</a>
+            </li>
+        </ul>
+        <hr/>
+        <div id="content-machine">
+            <div id="frontpage" class="toggle-content is-visible">
+                <a name="main"></a>
+                <a href="#kowigae" class="toggle"><img id="kowigae-icon" src="images/kowigae.png" /></a>
+                <a href="#luy" class="toggle"><img id="luy-icon" src="images/luy.png" /></a>
+                <img id="kuwod-icon" src="images/kuwod.png" />
+                <a href="#fam" class="toggle"><img id="fam-icon" src="images/fam.png" /></a>
+                <a href="#liy" class="toggle"><img id="liy-icon" src="images/liy.png" /></a>
+            </div>
         
-        <div id="fam" class="toggle-content">
-            <a href="#frontpage" class="toggle">← meechomo</a>
-            <h2>kumawet kufam</h2>
-            <p>poems</p>
-        </div>
-        
-        <div id="liy" class="toggle-content">
-            <a href="#frontpage" class="toggle">← meechomo</a>
-            <h2>kumawet kuliy</h2>
-            <div class="article" id="story-shiwud">
-                <h3>shiwud - re'yir, re'yan</h3>
-                <p>yuud ti, pamam e ti Patur. re'yan Patur ti Asya, lon tu'ip. reko nubin reko nubin lon erto re. tse! nutwe shas Patur Asya, lon erto Asya ti Henor. huyuy Patur rinsu, huyuy Patur palef, minti nuo e ti, ti Asya. nim Patur -- re'yir! re'yir! fa ge' Patur shironta ran, ge' ti pagur manho, fa lanelane erto ti.</p>
+            <div id="kowigae" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>small cat small blog</h2>
+                <h3>13 November</h3>
+                <p>this is a test entry.</p>
+            </div>
 
-                <p>tse! reko erto erto, bonhim Patur nuo e ti, bonhim huyyar manho, mintiye ti. huyuy Patur rinsu, huyuy Patur rinsu. Rinsu, rinsu, lane, lane. re'yir Asya, shas Asya Patur, ne Asya Patur manho, kumo Asya nuo e ti. nim Asya -- re'yan piy Patur, re'yir Patur piy. </p>
+            <div id="luy" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>small cat small art</h2>
+                <p>drawings and things</p>
+            </div>
+            
+            <div id="kuwod" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>small cat small home</h2>
+                <p>totally an about page</p>
+            </div>
+            
+            <div id="fam" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>small cat small song</h2>
+                <p>poems</p>
+            </div>
+            
+            <div id="liy" class="toggle-content">
+                <a href="#frontpage" class="toggle">← meechomo</a>
+                <h2>small cat small history</h2>
+                <div class="article" id="story-shiwud">
+                    <h3>fable - friend, friend</h3>
+                    <p>He exists, his name Patur. Friend Patur he Asya, both same. During storm during storm both they play. Ah! One day, Patur sees Asya, both Asya he Henor plays. Patur tastes salt, Patur tastes iron, breaks his toy, he Asya. Patur says -- Friend! Friend! Then Patur runs angrily with, he runs to away, then alone he plays.</p>
 
-                <p>fa shasye Patur. tio Asya.</p>
+                    <p>Ah! During play play, Patur drops his toy, drops to ground, he breaks. Patur tastes salt, Patur tastes salt. Salt, salt, one, one. Friend Asya, Asya sees Patur, Asya comes to Patur, Asya fixes his toy. Asya says -- friend I Patur, friend Patur I.</p>
 
-                <p>nim Patur -- re'yir piy rom, re'yan rom piy.</p>
+                    <p>Then Patur looks. Honest Asya.</p>
+
+                    <p>Patur says -- friend I you, friend you I.</p>
+                </div>
             </div>
         </div>
     </div>
