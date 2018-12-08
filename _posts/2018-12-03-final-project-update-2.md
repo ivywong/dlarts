@@ -10,7 +10,7 @@ The point here is that in this culture, everyone who isn't a stranger -- yes, ev
 
 In any case, I'm feeling a bit behind; I've been swamped with work recently. At the very least, I'm hoping I can get a few of these types of stories and a few snippets up for a homepage by the presentation next week. I'm not sure I can get this drastic of a contrast between both translations for other pieces of writing, hm... Well, the good thing about making up a language is that you can make up the things that trip people up, too.
 
-EDIT: I've settled on a title for this project: _small cat small home_, a literal translation of the website name. Work in progress can be seen here: [small cat small home]({{site.baseurl}}/remo/index.html)
+EDIT: I've settled on a title for this project: _small cat small home_, a literal translation of the website name. Work in progress can be seen here: [small cat small home]({{site.baseurl}}/remo/)
 
 ## shiwud - re'yir, re'yan (poor friend, good friend)
 
