@@ -1,0 +1,37 @@
+{
+    "sampleid": {
+        "title_original": "",
+        "title_manual": "",
+        "content_original": [
+        ],
+        "content_manual": [
+        ]
+    },
+    "nov13": {
+        "title_original": "kun heilane we 13",
+        "title_manual": "November 13",
+        "content_original": [
+
+        ],
+        "content_manual": [
+            "Ah! There was a storm last week, and it flooded my cousin's house. My computer broke, but my cousin is safe. I talked to Mesya, and she said she would help for now. So, I'm restarting this website.",
+            "The sun set, and now it's dark and rainy. The mountains behind our home are more foreboding than ever. The cat is sleeping outside, and we're worried for it."
+        ]
+    },
+    "story-shiwud" : {
+        "title_original": "re'yir, re'yan",
+        "title_manual": "poor friend, good friend",
+        "content_original": [
+            "yuud ti, pamam e ti Patur. re'yan Patur ti Asya, lon tu'ip. reko nubin reko nubin lon erto re. tse! nutwe shas Patur Asya, lon erto Asya ti Henor. huyuy Patur rinsu, huyuy Patur palef, minti nuo e ti, ti Asya. nim Patur -- re'yir! re'yir! fa ge' Patur shironta ran, ge' ti pagur manho, fa lanelane erto ti.",
+            "tse! reko erto erto, bonhim Patur nuo e ti, bonhim huyyar manho, mintiye ti. huyuy Patur rinsu, huyuy Patur rinsu. Rinsu, rinsu, lane, lane. re'yir Asya, shas Asya Patur, ne Asya Patur manho, kumo Asya nuo e ti. nim Asya -- re'yan piy Patur, re'yir Patur piy.",
+            "fa shasye Patur. tio Asya.",
+            "nim Patur -- re'yir piy rom, re'yan rom piy."
+        ],
+        "content_manual": [
+            "There once was a child named Patur. Patur and Asya were good friends. They would play together all day and night. But one day, Patur saw Asya playing with Henor. Patur became jealous and broke Asya's toy. Poor friend! he said. Poor friend! And he stomped off to play with his toys alone.",
+            "But while playing, Patur dropped his toy onto the ground. It broke. Patur became sad. Sad and alone. Poor friend Asya saw him and came over and fixed his toy. Asya said, \"You are a poor friend to me, but I am a good friend to you.\"",
+            "And Patur looked, and it was true.",
+            "Patur said, \"I am a poor friend to you, and you are a good friend to me.\""
+          ]
+    }
+}

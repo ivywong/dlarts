@@ -9,69 +9,74 @@
 <body>
     <div id="translate-bar">
         <button type="button" id="show-original" class="button inactive">Show Original</button>
-        <button type="button" id="machine-translation" class="button">Google Translate</button>
+        <button type="button" id="machine-translation" class="button active">Google Translate</button>
+        <button type="button" id="show-manual" class="button inactive">Manual Translation</button>
     </div>
     <div id="site-original" class="toggle-content is-visible">
-        <h1>kumawet kukuwod</h1>
-        <ul id="nav">
-            <li> kuwod kod </li>
-            <li>
-                <b>re'yom | </b>
-                <a href="#">rinheg boshti</a>
-            </li>
-            <li>
-                <b>re'yan | </b>
-                <a href="#">maney yopon</a>
-                <a href="#">patur, patur</a>
-            </li>
-            <li>
-                <b>re'yir | </b>
-                <a href="#">yumoyyan wor</a>
-            </li>
-        </ul>
+        <div id="header-original">
+            <h1 id="site-title">kumawet kukuwod</h1>
+            <ul id="nav">
+                <li id="nav-label"> kuwod kod </li>
+                <li>
+                    <b id="nav-yom">re'yom | </b>
+                    <a href="#">rinheg boshti</a>
+                </li>
+                <li>
+                    <b id="nav-yan">re'yan | </b>
+                    <a href="#">maney yopon</a>
+                    <a href="#">patur, patur</a>
+                </li>
+                <li>
+                    <b id="nav-yir">re'yir | </b>
+                    <a href="#">yumoyyan wor</a>
+                </li>
+            </ul>
+        </div>
         <hr/>
         <div id="content">
             <div id="frontpage" class="toggle-content is-visible">
                 <a name="main"></a>
                 <a href="#kowigae" class="toggle"><img id="kowigae-icon" src="images/kowigae.png" /></a>
                 <a href="#luy" class="toggle"><img id="luy-icon" src="images/luy.png" /></a>
-                <img id="kuwod-icon" src="images/kuwod.png" />
+                <a href="#kuwod" class="toggle"><img id="kuwod-icon" src="images/kuwod.png" /></a>
                 <a href="#fam" class="toggle"><img id="fam-icon" src="images/fam.png" /></a>
                 <a href="#liy" class="toggle"><img id="liy-icon" src="images/liy.png" /></a>
             </div>
         
             <div id="kowigae" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
-                <h2>kumawet kukowigae</h2>
-                <h3>13 November</h3>
-                <p>this is a test entry.</p>
+                <h2 id="kowigae-title">kumawet kukowigae</h2>
+                <div class="entry" id="nov13">
+                    <h3>kun heilane we 13</h3>
+                    <p>this is a test entry.</p>
+                    <p>this is a test entry.</p>
+                </div>
             </div>
 
             <div id="luy" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
-                <h2>kumawet kuluy</h2>
+                <h2 id="luy-title">kumawet kuluy</h2>
                 <p>drawings and things</p>
             </div>
             
             <div id="kuwod" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
-                <h2>kumawet kukuwod</h2>
+                <h2 id="kuwod-title">kumawet kukuwod</h2>
                 <p>totally an about page</p>
             </div>
             
             <div id="fam" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
-                <h2>kumawet kufam</h2>
+                <h2 id="fam-title">kumawet kufam</h2>
                 <p>poems</p>
             </div>
             
             <div id="liy" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
-                <h2>kumawet kuliy</h2>
-                <div class="article" id="story-shiwud">
+                <h2 id="liy-title">kumawet kuliy</h2>
+                <div class="entry" id="story-shiwud">
                     <h3>shiwud - re'yir, re'yan</h3>
                     <p>yuud ti, pamam e ti Patur. re'yan Patur ti Asya, lon tu'ip. reko nubin reko nubin lon erto re. tse! nutwe shas Patur Asya, lon erto Asya ti Henor. huyuy Patur rinsu, huyuy Patur palef, minti nuo e ti, ti Asya. nim Patur -- re'yir! re'yir! fa ge' Patur shironta ran, ge' ti pagur manho, fa lanelane erto ti.</p>
-
                     <p>tse! reko erto erto, bonhim Patur nuo e ti, bonhim huyyar manho, mintiye ti. huyuy Patur rinsu, huyuy Patur rinsu. Rinsu, rinsu, lane, lane. re'yir Asya, shas Asya Patur, ne Asya Patur manho, kumo Asya nuo e ti. nim Asya -- re'yan piy Patur, re'yir Patur piy. </p>
 
                     <p>fa shasye Patur. tio Asya.</p>
@@ -82,61 +87,63 @@
         </div>
     </div>
     <div id="site-machine" class="toggle-content">
-        <h1>small cat small home</h1>
-        <ul id="nav">
-            <li>other home</li>
-            <li>
-                <b>friend | </b>
-                <a href="#">red lion</a>
-            </li>
-            <li>
-                <b>friend | </b>
-                <a href="#">endless water</a>
-                <a href="#">warrior, warrior</a>
-            </li>
-            <li>
-                <b>friend | </b>
-                <a href="#">good today</a>
-            </li>
-        </ul>
+        <div id="header-machine">
+            <h1>small cat small home</h1>
+            <ul id="nav">
+                <li>other home</li>
+                <li>
+                    <b>friend | </b>
+                    <a href="#">red lion</a>
+                </li>
+                <li>
+                    <b>friend | </b>
+                    <a href="#">endless water</a>
+                    <a href="#">warrior, warrior</a>
+                </li>
+                <li>
+                    <b>friend | </b>
+                    <a href="#">good today</a>
+                </li>
+            </ul>
+        </div>
         <hr/>
         <div id="content-machine">
             <div id="frontpage" class="toggle-content is-visible">
                 <a name="main"></a>
                 <a href="#kowigae" class="toggle"><img id="kowigae-icon" src="images/kowigae.png" /></a>
                 <a href="#luy" class="toggle"><img id="luy-icon" src="images/luy.png" /></a>
-                <img id="kuwod-icon" src="images/kuwod.png" />
+                <a href="#kuwod" class="toggle"><img id="kuwod-icon" src="images/kuwod.png" /></a>
                 <a href="#fam" class="toggle"><img id="fam-icon" src="images/fam.png" /></a>
                 <a href="#liy" class="toggle"><img id="liy-icon" src="images/liy.png" /></a>
             </div>
         
             <div id="kowigae" class="toggle-content">
-                <a href="#frontpage" class="toggle">← meechomo</a>
+                <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small blog</h2>
                 <h3>13 November</h3>
                 <p>this is a test entry.</p>
             </div>
 
             <div id="luy" class="toggle-content">
-                <a href="#frontpage" class="toggle">← meechomo</a>
+                <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small art</h2>
                 <p>drawings and things</p>
             </div>
             
             <div id="kuwod" class="toggle-content">
-                <a href="#frontpage" class="toggle">← meechomo</a>
+                <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small home</h2>
                 <p>totally an about page</p>
             </div>
             
             <div id="fam" class="toggle-content">
-                <a href="#frontpage" class="toggle">← meechomo</a>
+                <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small song</h2>
                 <p>poems</p>
             </div>
             
             <div id="liy" class="toggle-content">
-                <a href="#frontpage" class="toggle">← meechomo</a>
+                <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small history</h2>
                 <div class="article" id="story-shiwud">
                     <h3>fable - friend, friend</h3>
@@ -150,5 +157,7 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="site-manual" class="toggle-content">
     </div>
 </body>

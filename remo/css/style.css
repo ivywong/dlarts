@@ -25,7 +25,7 @@ p {
     font-size: 1.5em;
 }
 
-#site-original, #site-machine {
+#site-original, #site-machine, #site-manual {
     margin-left: 20px;
     max-width: 1200px;
 }
@@ -43,9 +43,50 @@ p {
     display: inline-block;
     float: left;
     background-color: #d9d9d9;
-    margin-right: 20px;
+    margin-right: 15px;
     padding: 5px;
-    border: 2px solid black;
+    border: 1px solid black;
+}
+
+.button.inactive {
+    background-color: #d9d9d9;
+}
+
+.button.active {
+    background-color: #3BB3DB;
+}
+
+#manual-content {
+    display: inline-block;
+    float: left;
+    padding-right: 5px;
+}
+
+#manual-loader {
+    float: right;
+    display: inline-block;
+}
+
+/* source: https://www.w3schools.com/howto/howto_css_loader.asp */ 
+.loader {
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #3498db;
+    width: 12px;
+    height: 12px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 #nav li {
@@ -61,6 +102,10 @@ p {
 
 .toggle-content.is-visible {
     display: block;
+}
+
+.aside {
+    float: right;
 }
 
 #kowigae-icon {
