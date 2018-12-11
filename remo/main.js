@@ -170,8 +170,8 @@ var manualTranslate = function(event) {
 		manualData["translating"] = true;
 		manualData["intervalID"] = setInterval(updateLoader, 1000);
 		// DEBUG
-		setTimeout(removeLoader, secs*1000, true);
-		// setTimeout(removeLoader, 1000, true);
+		manualData["timeoutID"] = setTimeout(removeLoader, secs*1000, true);
+		// manualData["timeoutID"] = setTimeout(removeLoader, 1000, true);
 	}
 }
 
@@ -187,6 +187,9 @@ var updateLoader = function() {
 var removeLoader = function(naturalTimeout) {
 	if (manualData["translating"]) {
 		clearInterval(manualData["intervalID"]);
+		clearTimeout(manualData["timeoutID"]);
+		manualData["intervalID"] = null;
+		manualData["timeoutID"] = null;
 		manualData["translating"] = false;
 		var button = document.querySelector("#show-manual");
 		if (naturalTimeout) {
