@@ -160,7 +160,7 @@ var manualTranslate = function(event) {
 
 		var actions = ["Check Dictionary", "Look Up Reference", "Consult Native Speaker"];
 		var randaction = actions[Math.floor(Math.random() * actions.length)];
-		var secs = Math.floor(10 + Math.random() * 10);
+		var secs = Math.floor(10 + Math.random() * 5);
 		var innerText = `
 			<div id="manual-content">${randaction}</div>
 			<div id="manual-loader">${secs}</div>
@@ -256,7 +256,7 @@ var updateManualTranslation = function(){
 			if (!p_done) {
 				translateParagraph(currentPage, entries, currentData["last_entry"], currentData["last_p"] + 1);
 			} else if (!e_done) {
-				translateParagraph(currentPage, entries, currentData["last_entry"], 0);
+				translateParagraph(currentPage, entries, currentData["last_entry"] + 1, 0);
 			}
 		}
 	}

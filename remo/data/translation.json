@@ -7,6 +7,36 @@
         "content_manual": [
         ]
     },
+    "about": {
+        "title_original": "",
+        "title_manual": "",
+        "content_original": [
+        ],
+        "content_manual": [
+            "Welcome, sis!!"
+        ]
+    },
+    "poem-leaf": {
+        "title_original": "liw",
+        "title_manual": "leaves",
+        "content_original": [
+        ],
+        "content_manual": [
+            "When I walk to school,\nleaves walk with me.\nWhen I walk back home,\nleaves walk with me.",
+            "Green, yellow, red, oh!",
+            "I ask the leaves:\n Do you, too, have school?\nDo you, too, have homes?"
+        ]
+    },
+    "poem-sis": {
+        "title_original": "kumi",
+        "title_manual": "sis",
+        "content_original": [
+        ],
+        "content_manual": [
+            "Your bright laugh\n How far away it is \n Your kind eyes \n How far away they are \n Your silly tongue \n How far away it is \n Your warm love \n How far away it is",
+            "Sis,\n How far away you are."
+        ]
+    },
     "nov13": {
         "title_original": "kun heilane we 13",
         "title_manual": "November 13",

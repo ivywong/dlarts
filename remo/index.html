@@ -8,9 +8,9 @@
 </head>
 <body>
     <div id="translate-bar">
-        <button type="button" id="show-original" class="button inactive">Show Original</button>
-        <button type="button" id="machine-translation" class="button active">Google Translate</button>
-        <button type="button" id="show-manual" class="button inactive">Manual Translation</button>
+        <button type="button" id="show-original" class="button">Show Original</button>
+        <button type="button" id="machine-translation" class="button">Google Translate</button>
+        <button type="button" id="show-manual" class="button">Manual Translation</button>
     </div>
     <div id="site-original" class="toggle-content is-visible">
         <div id="header-original">
@@ -36,11 +36,21 @@
         <div id="content">
             <div id="frontpage" class="toggle-content is-visible">
                 <a name="main"></a>
-                <a href="#kowigae" class="toggle"><img id="kowigae-icon" src="images/kowigae.png" /></a>
-                <a href="#luy" class="toggle"><img id="luy-icon" src="images/luy.png" /></a>
-                <a href="#kuwod" class="toggle"><img id="kuwod-icon" src="images/kuwod.png" /></a>
-                <a href="#fam" class="toggle"><img id="fam-icon" src="images/fam.png" /></a>
-                <a href="#liy" class="toggle"><img id="liy-icon" src="images/liy.png" /></a>
+                <a href="#kowigae" class="toggle">
+                    <img id="kowigae-icon" src="images/kowigae.png" onmouseover="this.src='images/kowigae2.png'" onmouseout="this.src='images/kowigae.png'"/>
+                </a>
+                <a href="#luy" class="toggle">
+                    <img id="luy-icon" src="images/luy.png" onmouseover="this.src='images/luy2.png'" onmouseout="this.src='images/luy.png'"/>
+                </a>
+                <a href="#kuwod" class="toggle">
+                    <img id="kuwod-icon" src="images/kuwod.png" onmouseover="this.src='images/kuwod-mawet.png'" onmouseout="this.src='images/kuwod.png'"/>
+                </a>
+                <a href="#fam" class="toggle">
+                    <img id="fam-icon" src="images/fam.png" onmouseover="this.src='images/fam2.png'" onmouseout="this.src='images/fam.png'"/>
+                </a>
+                <a href="#liy" class="toggle">
+                    <img id="liy-icon" src="images/liy.png" onmouseover="this.src='images/liy2.png'" onmouseout="this.src='images/liy.png'"/>
+                </a>
             </div>
         
             <div id="kowigae" class="toggle-content">
@@ -48,27 +58,53 @@
                 <h2 id="kowigae-title">kumawet kukowigae</h2>
                 <div class="entry" id="nov13">
                     <h3>kun heilane we 13</h3>
-                    <p>this is a test entry.</p>
-                    <p>this is a test entry.</p>
+                    <p>tse! nubin shak meechomo, yosew remem kuwod, mintiye roiole. rep remem tsis. yoyye Mesya remem wetyu, nim ti -- nusyuf pir irru, fa yuon wey kuwod.</p>
+                    <p>weney patum nunsuwe, yontey iro, yontey luro, sun piypiy dedidedi borom get. patum mawet eron nuyyawug, mayaw wod ti.</p>
                 </div>
             </div>
 
             <div id="luy" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
                 <h2 id="luy-title">kumawet kuluy</h2>
-                <p>drawings and things</p>
+                <img src="images/mountains.jpeg" />
             </div>
             
             <div id="kuwod" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
                 <h2 id="kuwod-title">kumawet kukuwod</h2>
-                <p>totally an about page</p>
+                <div class="entry" id="about">
+                    <h3></h3>
+                    <p>renhu kumi!!</p>
+                </div>
             </div>
             
             <div id="fam" class="toggle-content">
                 <a href="#frontpage" class="toggle">← meechomo</a>
                 <h2 id="fam-title">kumawet kufam</h2>
-                <p>poems</p>
+                <div class="entry" id="poem-leaf">
+                    <h3>liw</h3>
+                    <p class="verse"> ra memaho manho
+                        ra liw motu
+                        ra wod manho
+                        ra liw motu </p>
+                    <p>umiku, tsinhanta, boshti, ro!</p>
+                    <p class="verse"> tu liw wetyu --
+                        tu'ip yuud memaho?
+                        tu'ip yuud wod?  </p>
+                </div>
+                <div class="entry" id="poem-sis">
+                    <h3>kumi</h3>
+                    <p class="verse">huwerwoy neyo e rom
+                    kokof ti
+                    lina lar e rom
+                    kokof rir
+                    rado miwu e rom
+                    kokof ti
+                    boiy pasha e rom
+                    kokof ti </p>
+                    <p class="verse">kumi -- 
+                    kokof rom.</p>
+                </div>
             </div>
             
             <div id="liy" class="toggle-content">
@@ -120,26 +156,53 @@
             <div id="kowigae" class="toggle-content">
                 <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small blog</h2>
-                <h3>13 November</h3>
-                <p>this is a test entry.</p>
+                <h3>November 13</h3>
+                <p>Ah! last week storm, flood cousin small house, break computer. safe cousin but. talk Mesya to cousin, say it -- give temporary favor, then make site again.</p>
+                <p>begin sleep Sun, now dark, now rain, so piypiy dedidedi mountain behind. cat sleep at outside, house worry it.</p>
             </div>
 
             <div id="luy" class="toggle-content">
                 <a href="#frontpage" class="toggle">← go back</a>
-                <h2>small cat small art</h2>
-                <p>drawings and things</p>
+                <h2>small cat small picture</h2>
+                <img src="images/mountains.jpeg" />
             </div>
             
             <div id="kuwod" class="toggle-content">
                 <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small home</h2>
-                <p>totally an about page</p>
+                <div class="entry" id="about">
+                    <h3></h3>
+                    <p>welcome sister!!</p>
+                </div>
             </div>
             
             <div id="fam" class="toggle-content">
                 <a href="#frontpage" class="toggle">← go back</a>
                 <h2>small cat small song</h2>
-                <p>poems</p>
+                <div class="entry" id="poem-leaf">
+                    <h3>liw</h3>
+                    <p class="verse">Go to school
+                        Go with leaf
+                        Go to home
+                        Go with leaf </p>
+                    <p>Green, yellow, red, oh!</p>
+                    <p class="verse"> Ask to leaf
+                    same exist school?
+                    same exist home?  </p>
+                </div>
+                <div class="entry" id="poem-sis">
+                    <h3>sister</h3>
+                    <p class="verse"> bright your laugh
+                    kokof he
+                    kind your eyes
+                    kokof they
+                    happy your tongue
+                    kokof it
+                    intimate your love
+                    kokof he</p>
+                    <p class="verse"> sister --
+                    kokof you.</p>
+                </div>
             </div>
             
             <div id="liy" class="toggle-content">
